@@ -265,7 +265,7 @@ input.b100 { width: 100%; }
 .layout__control { float: left; grid-area: c; }
 .layout__predef {
 	display: grid;
-	grid-template: ". ." ". ." ". .";
+	grid-template: "." "." "." "." "." ".";;
 	grid-auto-flow: column;
 	grid-gap: 6px;
 }
@@ -280,7 +280,7 @@ input.b100 { width: 100%; }
 		grid-template: "c" "d";
 	}
 	.layout__predef {
-		grid-template: ". . ." ". . .";
+		grid-template: ". ." ". ." ". .";
 		grid-auto-flow: row;
 	}
 	.col_1_2 { width: 45%; }
@@ -562,7 +562,15 @@ $$(".flag").on('click', function(){ switch_lang(this.alt) });
 </script>
 
 <script type="text/javascript">
-var names = ["Legionnaire","Praetorian","Imperian","Equites Legati","Equites Imperatoris","Equites Caesaris","Battering ram","Fire Catapult","Senator","Settler","Maceman","Spearman","Axeman","Scout","Paladin","Teutonic Knight","Ram","Catapult","Chief","Settler","Phalanx","Swordsman","Pathfinder","Theutates Thunder","Druidrider","Haeduan","Ram","Trebuchet","Chieftain","Settler","Rat","Spider","Serpent","Bat","Wild boar","Wolf","Bear","Crocodile","Tiger","Elephant","Pikeman","Thorned Warrior","Guardsman","Birds Of Prey","Axerider","Natarian Knight","Warelephant","Ballista","Natarian Emperor","Settler","Slave Militia","Ash Warden","Khopesh Warrior","Sopdu Explorer","Anhur Guard","Resheph Chariot","Ram","Stone Catapult","Nomarch","Settler","Mercenary","Bowman","Spotter","Steppe Rider","Marksman","Marauder","Ram","Catapult","Logades","Settler","Hoplite","Sentinel","Shieldsman","Twinsteel Therion","Elpida Rider","Corinthian Crusher","Ram","Ballista","Ephor","Settler","Thrall","Shield Maiden","Berserker","Heimdall\u2019s Eye","Huskarl Rider","Valkyrie\u2019s Blessing","Ram","Catapult","Jarl","Settler"];
+var names = ["Legionnaire Легионер","Praetorian Преторианец","Imperian Империанец","Equites Legati","Equites Imperatoris Конница императора","Equites Caesaris Конница Цезаря","Battering ram","Fire Catapult","Senator","Settler",
+"Maceman","Spearman","Axeman","Scout","Paladin","Teutonic Knight","Ram","Catapult","Chief","Settler",
+"Phalanx Фаланга","Swordsman Мечник","Pathfinder","Theutates Thunder Тевтатский гром","Druidrider Друид-всадник","Haeduan Эдуйская конница","Ram","Trebuchet","Chieftain","Settler",
+"Rat","Spider","Serpent","Bat","Wild boar","Wolf","Bear","Crocodile","Tiger","Elephant",
+"Pikeman","Thorned Warrior","Guardsman","Birds Of Prey","Axerider","Natarian Knight","Warelephant","Ballista","Natarian Emperor","Settler",
+"Slave Militia Ополченец","Ash Warden Служитель Аш","Khopesh Warrior Воин с хопешем","Sopdu Explorer","Anhur Guard Стражник Анхура","Resheph Chariot Колесница Решефа","Ram","Stone Catapult","Nomarch","Settler",
+"Mercenary Наемник","Bowman Лучник","Spotter","Steppe Rider Степной всадник","Marksman Стрелок","Marauder Мародер","Ram","Catapult","Logades","Settler",
+"Hoplite Гоплит","Sentinel Страж","Shieldsman Щитовик","Twinsteel Therion Двустальный Терион","Elpida Rider Эльпидский наездник","Corinthian Crusher Коринфский сокрушитель","Ram","Ballista","Ephor","Settler",
+"Thrall Тралл","Shield Maiden Дева щита","Berserker Берсеркер","Heimdalls Eye","Huskarl Rider Хускарлский наездник","Valkyries Blessing Благословление Валькирии","Ram","Catapult","Jarl","Settler"];
 </script>
 <div class="page">
 <div class="content">
@@ -682,23 +690,23 @@ var names = ["Legionnaire","Praetorian","Imperian","Equites Legati","Equites Imp
 		<!-- predefined params table -->
 		<h4>Predefined params</h4>
 		<div class="layout__predef">
-			<span class="but" role="button" data-set='{"params":8, "stat_sum":6, "mode":0, "upg": 0, "hdp": 0, "brew": 0, "item":0}'>early def</span>
-			<span class="but" role="button" data-set='{"params":8, "stat_sum":1, "mode":0, "upg": 0, "hdp": 0, "brew": 0, "item":0}'>early off</span>
-			<span class="but" role="button" data-set='{"params":8, "stat_sum":8, "mode":0, "upg": 0, "hdp": 0, "brew": 0, "item":0}'>early farm</span>
-			<span class="but" role="button" data-set='{"params":2, "stat_sum":6, "mode":2, "upg":20, "hdp":20, "brew": 20, "item":5}'>late def</span>
-			<span class="but" role="button" data-set='{"params":2, "stat_sum":1, "mode":1, "upg":20, "hdp":20, "brew": 20, "item":5}'>late off</span>
-			<span class="but" role="button" data-set='{"params":3, "stat_sum":8, "mode":0, "upg":20, "hdp":20, "brew": 20, "item":5}'>late farm</span>
+			<span class="but" role="button" data-set='{"params":8, "stat_sum":6, "mode":0, "upg": 0, "hdp": 0, "brew": 0, "item":0}'>early def ранний деф</span>
+			<span class="but" role="button" data-set='{"params":8, "stat_sum":1, "mode":0, "upg": 0, "hdp": 0, "brew": 0, "item":0}'>early off ранний офф</span>
+			<span class="but" role="button" data-set='{"params":8, "stat_sum":8, "mode":0, "upg": 0, "hdp": 0, "brew": 0, "item":0}'>early farm ранний фарм</span>
+			<span class="but" role="button" data-set='{"params":2, "stat_sum":6, "mode":2, "upg":20, "hdp":20, "brew": 20, "item":5}'>late def поздний деф</span>
+			<span class="but" role="button" data-set='{"params":2, "stat_sum":1, "mode":1, "upg":20, "hdp":20, "brew": 20, "item":5}'>late off поздний офф</span>
+			<span class="but" role="button" data-set='{"params":3, "stat_sum":8, "mode":0, "upg":20, "hdp":20, "brew": 20, "item":5}'>late farm поздний фарм</span>
 		</div>
 		<div style="position: sticky; top: 0;">
 			<h4>Select charasteristics</h4>
 			<div>
 				<label for="mode">Troops:</label>
 				<select id="mode">
-					<option value="0">all</option>
-					<option value="1">offense units</option>
-					<option value="2">defense units</option>
-					<option value="3">Nature</option>
-					<option value="4">Reconnaissance</option>
+					<option value="0">all все</option>
+					<option value="1">off units нападающие</option>
+					<option value="2">def units защитные</option>
+					<option value="3">Nature природа</option>
+					<option value="4">Reconnaissance разведка</option>
 				</select>
 			</div>
 			<div>
