@@ -826,7 +826,7 @@ DOMTableRangeSelect.prototype.setRange = function(low, high) {
 };
 
 
-/* view helper */
+/* view helper */ 
 var TableHelper = {
   cellNiceFixedFactory: function(digits) {
     return (function(cell, value) {
