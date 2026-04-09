@@ -547,6 +547,7 @@ var i18n = {
     if (!server) { return; }
     var lastValue = null;
     var lastNewValue = null;
+	/*
     function f() {
         lastNewValue = lastValue = this.value;
         var s = parseVersion(this.value);
@@ -561,6 +562,7 @@ var i18n = {
             }
         }
     };
+	*/
     server.addEventListener('change', f);
     window.addEventListener('load', function () {
         setTimeout(f.bind(server), 0);
