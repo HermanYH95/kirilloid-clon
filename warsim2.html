@@ -437,29 +437,12 @@ $$(".flag").on('click', function(){ switch_lang(this.alt) });
     }
 </style>
 <select id="server">
-    <optgroup label="Kingdoms">
-        <option value="1.50">T5</option>
-        <option value="3.50">T5 3x</option>
-        <option value="5.50">T5 5x</option>
-    </optgroup>
-    <optgroup label="Legends">
-        <option value="1.45">T4.5 1x</option>
-        <option value="1.46">T4.6 1x</option>
-        <option value="2.46">T4.6 2x</option>
-        <option value="3.46">T4.6 3x</option>
-        <option value="5.46">T4.6 5x</option>
-        <option value="10.46">T4.6 10x</option>
-    </optgroup>
     <optgroup label="Specials">
-        <option value="1.431" disabled>New Year Special</option>
-        <option value="1.432">Annual Special</option>
-        <option value="2.432">Annual Special 2x</option>
-        <option value="3.432">Annual Special 3x</option>
-    </optgroup>
-    <optgroup label="Classis">
-        <option value="1.36">T3.6</option>
-        <option value="3.36">T3.6 3x</option>
-        <option value="1.25">T2.5</option>
+        <option value="1.432">Rof</option>
+        <option value="2.432">Rof 2x</option>
+        <option value="3.432">Rof 3x</option>
+		<option value="5.432">Rof 5x</option>
+		<option value="10.432" selected>Rof 10x</option>
     </optgroup>
 </select>
 <div id="serverHint" style="display: none;">
@@ -476,6 +459,7 @@ $$(".flag").on('click', function(){ switch_lang(this.alt) });
     if (!server) { return; }
     var lastValue = null;
     var lastNewValue = null;
+	/*
     function f() {
         lastNewValue = lastValue = this.value;
         var s = parseVersion(this.value);
@@ -490,6 +474,7 @@ $$(".flag").on('click', function(){ switch_lang(this.alt) });
             }
         }
     };
+	*/
     server.addEventListener('change', f);
     window.addEventListener('load', function () {
         setTimeout(f.bind(server), 0);
@@ -1592,8 +1577,8 @@ var Warsim = {
 
 </div>
 </div>
-<script type="text/javascript" src="js/utils8277.js?d"></script>
-<script type="text/javascript" src="js/units363b.js?j"></script>
+<script type="text/javascript" src="js/utils.js?d"></script>
+<script type="text/javascript" src="js/units.js?j"></script>
 <script type="text/javascript">
 $$(".content img[alt]").forEach(function(img){ img.title = img.alt; });
 i18n.cond = [
@@ -1918,7 +1903,7 @@ window.addEventListener('message', function (event){
 	helping you playing this wonderful MMOG.
 	<noscript><p style="background:red">It will works properly only if JavaScript is enabled!</p></noscript>
 </div>
-<script>
+<!--script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -1928,7 +1913,7 @@ window.addEventListener('message', function (event){
   ga('set', 'language', document.documentElement.lang);
   ga('send', 'pageview');
 
-</script>
+</script-->
 </body>
 
 <!-- Mirrored from travian.kirilloid.ru/warsim2.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Jul 2025 15:31:55 GMT -->
